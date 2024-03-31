@@ -21,9 +21,33 @@ In our exploration with the Question-Oriented Hierarchical Transport Model, we h
 
 To demonstrate the versatility and robustness of our model, we selected six representative systems that have been previously reported in experimental research works by scholars in the field. These systems serve as benchmarks, allowing us to validate the accuracy and efficiency of our model, as well as its practical utility in addressing real-world scientific problems. Here is a brief introduction to the origins and characteristics of these six systems:
 
-1. System 1 - This system
-2. System 2 - This system Fano Resonance charged molecule
-3. System 3 - This system DQI in the heterocyclic molecule
-4. System 4 - This system
-5. System 5 - This system
-6. System 6 - This system biased device rectifier in ferrocenyl molecule
+### System 1: π-Stacked Dimers with Quantum Interference
+- **Reference**: [Nature Chemistry, 2016, 8 (12), 1099–1104.](https://www.nature.com/articles/nchem.2615)
+- **Model Treatment**: Bare molecule + EHMO.
+
+### System 2: Fano Resonance Charged Molecule
+- **Reference**: [Angewandte Chemie International Edition, 2022, 134 (40), e202210097.](https://onlinelibrary.wiley.com/doi/10.1002/anie.202210097)
+- **Model Treatment**: Bare molecule with charge self-consistent Extended Hückel Molecular Orbital (EHMO) theory.
+
+### System 3: Destructive Quantum Interference in Heterocyclic Molecule
+- **Reference**: [Physical Chemistry Chemical Physics (PCCP), 2013, 16 (2), 653–662.](https://pubs.rsc.org/en/content/articlelanding/2014/cp/c3cp52837h)
+- **Model Treatment**: Bare molecule utilizing Density Functional Tight Binding (DFTB) with higher accuracy.
+
+### System 4
+- **Reference**: [Nature Nanotechnology, 2009, 4 (4), 230–234.](https://www.nature.com/articles/nnano.2009.26)
+- **Model Treatment**: Extended molecule using Density Functional Tight Binding (DFTB) with higher accuracy.
+
+### System 5
+- **Reference**: [Nano Letters, 2012, 12 (1), 354–358.](https://pubs.acs.org/doi/10.1021/nl203634m)
+- **Model Treatment**: Device analyzed using Density Functional Tight Binding (DFTB) with higher accuracy.
+
+### System 6: Biased Device Rectifier in Ferrocenyl Molecule
+- **Reference**: [Nature Communications, 2015, 6.](https://www.nature.com/articles/ncomms9598)
+- **Model Treatment**: Biased device analyzed with Density Functional Tight Binding (DFTB) with higher accuracy.
+
+1. System 1 - π-stacked dimers with mechanically-controlled quantum interference (Nat. Chem. 2016, 8 (12), 1099–1104.); model treatment: bare molecule + EHMO
+2. System 2 - This system Fano Resonance charged molecule (Angew. Chem. 2022, 134 (40), e202210097.); model treatment: bare molecule + charge self-consistent EHMO
+3. System 3 - This system DQI in the heterocyclic molecule (Phys. Chem. Chem. Phys. 2013, 16 (2), 653–662.); model treatment: bare molecule + DFTB with higher accuracy
+4. System 4 - This system (Nat. Nanotech. 2009, 4 (4), 230–234.); model treatment: extended molecule + DFTB with higher accuracy
+5. System 5 - This system (Nano Lett. 2012, 12 (1), 354–358.); model treatment: device + DFTB with higher accuracy
+6. System 6 - This system biased device rectifier in ferrocenyl molecule (Nat. Commun. 2015, 6.); model treatment: biased device + DFTB with higher accuracy

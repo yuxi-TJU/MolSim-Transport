@@ -3,7 +3,7 @@
 ## Introduction
 The Question-Driven Hierarchical Transport Computation method was developed in our laboratory (http://39.107.98.173/) as an autonomous method designed for the computation charge transport in molecular jucntion and molecular devices. By fullfilling the significant space between the conceptual ideal physical models and the ab initio quantum transport computation with hierarchical computational methods, this tool offers high performance computaion on charge transport in molecular junctions, with significant lower computational cost without losing accuracy compared with the main stream quantum transport computation packs based on DFT+NEGF.
 ![model diagram](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/82a0ddf0-5b75-4395-83de-b147ab1b33fd)
-
+![systemsize](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/08633bdc-b88c-4fe8-a4ed-246e80276e33)
 
 ## Innovative Approach
 Our strategy employs a hierarchical methodology in handling device structures and utilizes appropriate approximations combined with computation techniques of optimized precision to ensure both efficiency and accuracy. It incorporates various level quantum chemistry computational methods, ranging from the simplest Extended Hückel Molecular Orbital Theory (EHMO) to the more complex Semi-Empirical Density Functional Tight Binding (DFTB) for electronic structure calculations, tailored to the problem's specifics. For transport calculations, we employ the Non-Equilibrium Green's Function (NEGF) method with pre-defined precise numerical electrode self-energy, which significantly reduced computational demands by eliminating the need for repetitive electrode calculations. Moreover, our model enhances transport computation precision through energy level renormalization correction (DFT+Σ correction), precisely adjusting the molecule-electrode energy level alignment. This advancement enables accurate determinations of charge transport properties at the atomic level, streamlining the computational process while maintaining high precision.
@@ -20,7 +20,6 @@ To illustrate the practical application and effectiveness of our hierarchical TB
 
 ## Model Validation through benchmark studies
 In our exploration with the Question-Driven Hierarchical Transport Model, we have undertaken a nuanced approach towards molecular structure systems based on the specific objectives of our research. Our methodology involves varying degrees of simplification of the molecular systems, categorized into three distinct modeling systems for clarity and precision: the bare molecule, the extended molecule, and the device.
-![systemsize](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/08633bdc-b88c-4fe8-a4ed-246e80276e33)
 
 To demonstrate the versatility and robustness of our model, we selected six representative systems that have been previously reported in experimental research works by scholars in the field. These systems serve as benchmarks, allowing us to validate the accuracy and efficiency of our model, as well as its practical utility in addressing real-world scientific problems. Here is a brief introduction to the origins and characteristics of these six systems:
 

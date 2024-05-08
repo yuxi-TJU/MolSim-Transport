@@ -19,9 +19,7 @@ To illustrate the practical application and effectiveness of our hierarchical TB
 
 
 ## Model Validation through benchmark studies
-In our exploration with the Question-Driven Hierarchical Transport Model, we have undertaken a nuanced approach towards molecular structure systems based on the specific objectives of our research. Our methodology involves varying degrees of simplification of the molecular systems, categorized into three distinct modeling systems for clarity and precision: the bare molecule, the extended molecule, and the device.
-
-To demonstrate the versatility and robustness of our model, we selected six representative systems that have been previously reported in experimental research works by scholars in the field. These systems serve as benchmarks, allowing us to validate the accuracy and efficiency of our model, as well as its practical utility in addressing real-world scientific problems. Here is a brief introduction to the origins and characteristics of these six systems:
+To evaluate the performance of MolSim-Transport, it was applied to the following six molecular junction transport cases from the literature, forming a comprehensive benchmark test. These carefully selected cases span all levels of the QDHC strategy, ensuring the breadth and typicality of the test. The rapid replication of these cases demonstrates the high efficiency of the QDHC strategy in handling problems with different precision requirements and its unique ability to capture key factors in the transport process.
 
 ### System 1:  controlled Quantum Interference in π-Stacked Dimers
 - **Reference**: [Nature Chemistry, 2016, 8 (12), 1099–1104.](https://www.nature.com/articles/nchem.2615)

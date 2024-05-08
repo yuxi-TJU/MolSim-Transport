@@ -26,23 +26,29 @@ To demonstrate the versatility and robustness of our model, we selected six repr
 ### System 1:  controlled Quantum Interference in π-Stacked Dimers
 - **Reference**: [Nature Chemistry, 2016, 8 (12), 1099–1104.](https://www.nature.com/articles/nchem.2615)
 - **Model Treatment**: Bare molecule + EHMO.
+![case1](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/06c971bf-71f8-4d0e-aeba-772bd2884e5d)
 
 ### System 2: Fano Resonance in Non-neutral molecule
 - **Reference**: [Angewandte Chemie International Edition, 2022, 134 (40), e202210097.](https://onlinelibrary.wiley.com/doi/10.1002/anie.202210097)
 - **Model Treatment**: Bare molecule + charge self-consistent EHMO.
+![case2](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/2d3e9b53-9f78-499a-831d-7fc74e4ba4ba)
 
 ### System 3: Quantum Interference in Heterocyclic Molecule
 - **Reference**: [Physical Chemistry Chemical Physics (PCCP), 2013, 16 (2), 653–662.](https://pubs.rsc.org/en/content/articlelanding/2014/cp/c3cp53866d)
 - **Model Treatment**: Bare molecule + DFTB with higher accuracy.
+![case3](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/8f20778c-b85c-4514-abdb-afed86db17c1)
 
 ### System 4: binary conductance in the same junction for contact interface changes
 - **Reference**: [Nature Nanotechnology, 2009, 4 (4), 230–234.](https://doi.org/10.1038/nnano.2009.10)
 - **Model Treatment**: Extended molecule + DFTB with the same accuracy as the previous case.
+![case4](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/c2c1eb2f-46c1-4892-9290-415acbf4b7ec)
 
 ### System 5: Junctions with different govern conducting channels
 - **Reference**: [Nano Letters, 2012, 12 (1), 354–358.](https://pubs.acs.org/doi/10.1021/nl203634m)
 - **Model Treatment**: Device + energy level alignment to the Fermi level of the electrodes + DFTB with the same accuracy as the previous case.
+![case5](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/08035492-a13e-4c8d-aeea-3058e56529eb)
 
 ### System 6: Biased Ferrocenyl Rectifier
 - **Reference**: [Nature Communications, 2015, 6, 6324.](https://www.nature.com/articles/ncomms7324)
 - **Model Treatment**: Device under external electric field + DFTB with the same accuracy as the previous case.
+![case6](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/199efa73-40d8-45e9-869c-2d5a6dead373)

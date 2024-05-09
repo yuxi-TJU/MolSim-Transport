@@ -12,15 +12,6 @@ The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in
 
 ![Scheme Table](https://github.com/yuxi-TJU/MolSim-Transport/assets/68102657/0c693738-efcc-4a09-9723-256dff4b40b7)
 
-**Level 1 (L1):** The molecule dominates charge transport here, with electrodes and the "molecule-electrode" interface playing secondary roles. The L1 scheme focuses on the intrinsic molecular characteristics using the wide-band approximation and constant self-energy to substitute for electrodes and the "molecule-electrode" interface. This method ranges from the Extended Hückel Molecular Orbital method (EHT) to the Charge Self-Consistent Extended Hückel Theory (CSC-EHT), up to more advanced semi-empirical computational methods, describing molecular electronic properties with varying precision suitable for molecular systems of different characteristics and complexities. Different computational accuracies maintain the simplicity of matrix forms while simplifying the description of electron interactions reasonably.
-
-**Level 2 (L2):** When the focus shifts to the interactions between the molecule and the electrodes, making the "molecule-electrode" interface a significant factor, an extended molecular model including several electrode atoms should be constructed. MolSim-Transport explicitly considers the "molecule-electrode" interface, applying reasonable truncations to the size of electrode clusters. This maintains the accuracy of the coupling matrix description while balancing the system size and computational efficiency. It then uses the constant local density of states (LDOS) approximation of electrodes to generate the self-energy matrix, thus efficiently exploring the charge transport characteristics dominated by interface effects.
-
-**Level 3 (L3):** This level further incorporates the entire electrode structure. MolSim-Transport provides a molecular junction model that includes the complete principal layer of the electrode, using pre-calculated specific electrode surface Green's functions and the coupling matrix of the extended molecule to build the self-energy matrix, thereby avoiding extensive and time-consuming calculations of the electrode. Coupled with strategies such as regional division and the folding of system Green's functions, this greatly enhances computational efficiency. It further considers the effects of electric field polarization, using linear polarization to address molecular junctions under finite bias, thus enabling low-cost studies of molecular junction transport characteristics under limited bias conditions.
-
-## Innovative Approach
-Our strategy employs a hierarchical methodology in handling device structures and utilizes appropriate approximations combined with computation techniques of optimized precision to ensure both efficiency and accuracy. It incorporates various level quantum chemistry computational methods, ranging from the simplest Extended Hückel Molecular Orbital Theory (EHMO) to the more complex Semi-Empirical Density Functional Tight Binding (DFTB) for electronic structure calculations, tailored to the problem's specifics. For transport calculations, we employ the Non-Equilibrium Green's Function (NEGF) method with pre-defined precise numerical electrode self-energy, which significantly reduced computational demands by eliminating the need for repetitive electrode calculations. Moreover, our model enhances transport computation precision through energy level renormalization correction (DFT+Σ correction), precisely adjusting the molecule-electrode energy level alignment. This advancement enables accurate determinations of charge transport properties at the atomic level, streamlining the computational process while maintaining high precision.
-
 ## **The QDHC Model Framework**
 The QDHC model adheres to a structured workflow demonstrated in the following diagram when applying various levels of precision in simplification, which goes through an entire process from the initial geometric input final calculation of transport properties.
 
@@ -33,8 +24,7 @@ The QDHC model adheres to a structured workflow demonstrated in the following di
 
 ![flowchart](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/bac5855f-ecce-4467-a208-5a6b774f8ec0)
 
-## **Demonstration**
-To illustrate the practical application and effectiveness of our hierarchical TB transport model, we present a detailed protocol using the 1,3-BDT molecule, known for its destructive quantum interference (DQI) feature, as a case study.
+A detailed working protocol for the study of the transport property of 1,3-BDT molecule, known for its destructive quantum-interference feature, has been also posted to vividly demonstrated the proceeding process.
 ![workflow](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/ad6b807a-0ff2-4671-bfeb-35191da5049a)
 
 

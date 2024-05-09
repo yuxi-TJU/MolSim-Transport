@@ -1,6 +1,11 @@
 # Question-Driven Hierarchical Computation (QDHC) Transport Model
 
 ## Introduction
+'MolSim-Transport,' a highly efficient computational scheme within the 'Question-Driven Hierarchical Computation' (QDHC) framework, has been developed by Professor Yu Xi's research group (http://39.107.98.173/) at Tianjin University. This scheme integrates several transport models across various levels of approximation, complemented by computational methods of different accuracies. It provides a comprehensive, multi-level solution for analyzing the charge transport properties in molecular junctions.
+
+![model diagram](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/82a0ddf0-5b75-4395-83de-b147ab1b33fd)
+![systemsize](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/08633bdc-b88c-4fe8-a4ed-246e80276e33)
+
 The Question-Driven Hierarchical Computation Transport method was developed in our laboratory (http://39.107.98.173/) as an autonomous method designed for the computation charge transport in molecular jucntion and molecular devices. By fullfilling the significant space between the conceptual ideal physical models and the ab initio quantum transport computation with hierarchical computational methods, this tool offers high performance computaion on charge transport in molecular junctions, with significant lower computational cost without losing accuracy compared with the main stream quantum transport computation packs based on DFT+NEGF.
 ![model diagram](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/82a0ddf0-5b75-4395-83de-b147ab1b33fd)
 ![systemsize](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/08633bdc-b88c-4fe8-a4ed-246e80276e33)

@@ -7,11 +7,7 @@ _**MolSim-Transport**_, a highly efficient computational scheme within the _**Qu
 
 _**MolSim-Transport**_ bridges the theoretical gap between DFT+NEGF calculations on the full molecular devices and and simplified theoretical models, encompassing a range of simplifications and approximations at various levels. Considering that the charge transport properties of molecular devices are determined by the molecule, electrodes, and their interfacial interactions, transport calculations span multiple physical scales from atoms to devices. Depending on the specific problems studied and the primary factors involved, this approach selectively disregards less impactful secondary factors, focusing instead on those that critically influence system behavior. By effectively applying theoretical methods at different levels of approximation and precision, this strategy achieves greater efficiency while maintaining accuracy, thus enabling more effective exploration of charge transport behaviors in molecular junction systems.
 
-Here is the English translation for the detailed introduction of the "QDHC Strategy" along with an appropriate chapter title:
-
----
-
-**Detailed Description of the QDHC Strategy**
+## **Detailed Description of the QDHC Strategy**
 
 The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in the refined stratification and approximation strategies at two critical levels: defining the computational system scope and selecting computational methods. Considering that a typical molecular device consists of three parts: the molecule, the molecule-electrode interface, and the source/drain electrodes, the QDHC strategy requires researchers to select appropriate computational schemes and levels based on the objectives of their research. MolSim-Transport offers three levels of schemes:
 
@@ -24,12 +20,18 @@ The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in
 ## Innovative Approach
 Our strategy employs a hierarchical methodology in handling device structures and utilizes appropriate approximations combined with computation techniques of optimized precision to ensure both efficiency and accuracy. It incorporates various level quantum chemistry computational methods, ranging from the simplest Extended Hückel Molecular Orbital Theory (EHMO) to the more complex Semi-Empirical Density Functional Tight Binding (DFTB) for electronic structure calculations, tailored to the problem's specifics. For transport calculations, we employ the Non-Equilibrium Green's Function (NEGF) method with pre-defined precise numerical electrode self-energy, which significantly reduced computational demands by eliminating the need for repetitive electrode calculations. Moreover, our model enhances transport computation precision through energy level renormalization correction (DFT+Σ correction), precisely adjusting the molecule-electrode energy level alignment. This advancement enables accurate determinations of charge transport properties at the atomic level, streamlining the computational process while maintaining high precision.
 
+## **The QDHC Model Framework**
+The QDHC model adheres to a structured workflow when applying various levels of precision in simplification, which goes through an entire process from the initial geometric input final calculation of transport properties.
+0. Problem Definition
+1. Structural Input
+2. Hamiltonian Matrix Construction
+3. Definition of Electrode Interactions
+4. Establishment of Device Green's Function
+5. Calculation of Transport Properties
 
-## Performance and Benefits
-The Question-Driven Hierarchical Transport Model stands out with its hierarchical approximation strategy and multiple optimization techniques. Benchmark tests against leading transport calculation software have shown its capability for significant speed improvements—orders of magnitude faster—without compromising accuracy. This efficiency makes it an indispensable tool for the study of charge transport in molecular junction devices and the design of molecule devices.
+![flowchart](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/bac5855f-ecce-4467-a208-5a6b774f8ec0)
 
-
-## Demonstration
+## **Demonstration**
 To illustrate the practical application and effectiveness of our hierarchical TB transport model, we present a detailed protocol using the 1,3-BDT molecule, known for its destructive quantum interference (DQI) feature, as a case study.
 ![workflow](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/ad6b807a-0ff2-4671-bfeb-35191da5049a)
 

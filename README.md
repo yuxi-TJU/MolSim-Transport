@@ -13,7 +13,7 @@ The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in
 ![Scheme Table](https://github.com/yuxi-TJU/MolSim-Transport/assets/68102657/0c693738-efcc-4a09-9723-256dff4b40b7)
 
 ## **The QDHC Model Framework**
-The QDHC model adheres to a structured workflow demonstrated in the following diagram when applying various levels of precision in simplification, which goes through an entire process from the initial geometric input final calculation of transport properties.
+The QDHC model always adheres to a uniform structured workflow regardless of the precision level of simplification applied, which goes through an entire process from the initial geometric input final calculation of transport properties.
 
 1. Problem Definition
 2. Structural Input

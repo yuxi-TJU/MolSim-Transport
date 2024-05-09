@@ -17,17 +17,25 @@ The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in
 
 **Level 3 (L3):** This level further incorporates the entire electrode structure. MolSim-Transport provides a molecular junction model that includes the complete principal layer of the electrode, using pre-calculated specific electrode surface Green's functions and the coupling matrix of the extended molecule to build the self-energy matrix, thereby avoiding extensive and time-consuming calculations of the electrode. Coupled with strategies such as regional division and the folding of system Green's functions, this greatly enhances computational efficiency. It further considers the effects of electric field polarization, using linear polarization to address molecular junctions under finite bias, thus enabling low-cost studies of molecular junction transport characteristics under limited bias conditions.
 
+| Scheme  | System | Second Header | Second Header |
+| ------------- | ------------- | ------------- | ------------- |
+| L1  | Molecule  | Content Cell  | Content Cell  |
+| L2  | Extended molecule + electrode cluster  | Content Cell  | Content Cell  |
+| L3  | Extended molecule + electrode principal layer  | Content Cell  | Content Cell  |
+
+
 ## Innovative Approach
 Our strategy employs a hierarchical methodology in handling device structures and utilizes appropriate approximations combined with computation techniques of optimized precision to ensure both efficiency and accuracy. It incorporates various level quantum chemistry computational methods, ranging from the simplest Extended Hückel Molecular Orbital Theory (EHMO) to the more complex Semi-Empirical Density Functional Tight Binding (DFTB) for electronic structure calculations, tailored to the problem's specifics. For transport calculations, we employ the Non-Equilibrium Green's Function (NEGF) method with pre-defined precise numerical electrode self-energy, which significantly reduced computational demands by eliminating the need for repetitive electrode calculations. Moreover, our model enhances transport computation precision through energy level renormalization correction (DFT+Σ correction), precisely adjusting the molecule-electrode energy level alignment. This advancement enables accurate determinations of charge transport properties at the atomic level, streamlining the computational process while maintaining high precision.
 
 ## **The QDHC Model Framework**
 The QDHC model adheres to a structured workflow when applying various levels of precision in simplification, which goes through an entire process from the initial geometric input final calculation of transport properties.
-0. Problem Definition
-1. Structural Input
-2. Hamiltonian Matrix Construction
-3. Definition of Electrode Interactions
-4. Establishment of Device Green's Function
-5. Calculation of Transport Properties
+
+1. Problem Definition
+2. Structural Input
+3. Hamiltonian Matrix Construction
+4. Definition of Electrode Interactions
+5. Establishment of Device Green's Function
+6. Calculation of Transport Properties
 
 ![flowchart](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/bac5855f-ecce-4467-a208-5a6b774f8ec0)
 

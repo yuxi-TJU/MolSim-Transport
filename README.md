@@ -1,15 +1,16 @@
 # **_MolSim-Transport_: A Question-Driven Hierarchical Computation Scheme for Efficiently Decoding Charge Transport in Molecular Junctions**
 
 ## **Introduction**
-_**MolSim-Transport**_, a highly efficient computational scheme within the _**Question-Driven Hierarchical Computation (QDHC)**_ framework, has been developed by [Professor Yu Xi's research group](http://39.107.98.173/) at Tianjin University. This scheme integrates several transport models across various levels of approximation, complemented by computational methods of different accuracies. It provides a comprehensive, multi-level solution for analyzing the charge transport properties in molecular junctions.
+_**MolSim-Transport**_, a highly efficient computational scheme within the **Question-Driven Hierarchical Computation (QDHC)** framework, has been developed by [Professor Yu Xi's research group](http://39.107.98.173/) at Tianjin University. This scheme integrates several transport models across various levels of approximation, complemented by computational methods of different accuracies. It provides a comprehensive, multi-level solution for analyzing the charge transport properties in molecular junctions.
 
 ![hierarchy](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/e607529f-6e32-45fa-be8f-d2df5df58722)
 
 The QDHC design in _**MolSim-Transport**_ bridges the theoretical gap between DFT+NEGF calculations on the full molecular devices and and simplified theoretical models, by encompassing a range of simplifications and approximations at various levels. Considering that the charge transport properties of molecular devices are jointly determined by the molecule, electrodes, and their interfacial interactions, the calculations accordingly span multiple physical scales from atoms to devices. Driven by the actual researching questions, this method selectively disregards minor factors being less impactful and only focuses on the primary ones that critically influence system behavior. Moreover, by effectively applying theoretical methods at different levels of approximation and precision, this strategy achieves greater efficiency while maintaining accuracy, thus enabling more effective exploration of charge transport behaviors in molecular junction systems.
 
 ## **Detailed Description of the QDHC Strategy**
+The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in the refined stratification and approximation strategies at two critical levels: defining the computational system scope and selecting computational methods. Considering that a typical molecular device consists of three parts: the molecule, the molecule-electrode interface, and the source/drain electrodes, the QDHC strategy requires researchers to select appropriate computational schemes and levels based on the actual researching objectives. MolSim-Transport offers three levels of schemes, 
 
-The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in the refined stratification and approximation strategies at two critical levels: defining the computational system scope and selecting computational methods. Considering that a typical molecular device consists of three parts: the molecule, the molecule-electrode interface, and the source/drain electrodes, the QDHC strategy requires researchers to select appropriate computational schemes and levels based on the objectives of their research. MolSim-Transport offers three levels of schemes:
+![Scheme Table](https://github.com/yuxi-TJU/MolSim-Transport/assets/68102657/0c693738-efcc-4a09-9723-256dff4b40b7)
 
 **Level 1 (L1):** The molecule dominates charge transport here, with electrodes and the "molecule-electrode" interface playing secondary roles. The L1 scheme focuses on the intrinsic molecular characteristics using the wide-band approximation and constant self-energy to substitute for electrodes and the "molecule-electrode" interface. This method ranges from the Extended Hückel Molecular Orbital method (EHT) to the Charge Self-Consistent Extended Hückel Theory (CSC-EHT), up to more advanced semi-empirical computational methods, describing molecular electronic properties with varying precision suitable for molecular systems of different characteristics and complexities. Different computational accuracies maintain the simplicity of matrix forms while simplifying the description of electron interactions reasonably.
 
@@ -17,18 +18,11 @@ The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in
 
 **Level 3 (L3):** This level further incorporates the entire electrode structure. MolSim-Transport provides a molecular junction model that includes the complete principal layer of the electrode, using pre-calculated specific electrode surface Green's functions and the coupling matrix of the extended molecule to build the self-energy matrix, thereby avoiding extensive and time-consuming calculations of the electrode. Coupled with strategies such as regional division and the folding of system Green's functions, this greatly enhances computational efficiency. It further considers the effects of electric field polarization, using linear polarization to address molecular junctions under finite bias, thus enabling low-cost studies of molecular junction transport characteristics under limited bias conditions.
 
-| Scheme  | System | Technique | Primary transport factor & research emphasis |
-| ：-------------： | ：-------------： | :-------------: | :-------------: |
-| L1  | Molecule | Semi-empirical approach with multi-level precision for molecular electronic properties; constant self-energy term to mimic lead coupling  | Content Cell  |
-| L2  | Extended molecule + electrode cluster | Content Cell  | Content Cell  |
-| L3  | Extended molecule + electrode principal layer | Content Cell  | Content Cell  |
-
-
 ## Innovative Approach
 Our strategy employs a hierarchical methodology in handling device structures and utilizes appropriate approximations combined with computation techniques of optimized precision to ensure both efficiency and accuracy. It incorporates various level quantum chemistry computational methods, ranging from the simplest Extended Hückel Molecular Orbital Theory (EHMO) to the more complex Semi-Empirical Density Functional Tight Binding (DFTB) for electronic structure calculations, tailored to the problem's specifics. For transport calculations, we employ the Non-Equilibrium Green's Function (NEGF) method with pre-defined precise numerical electrode self-energy, which significantly reduced computational demands by eliminating the need for repetitive electrode calculations. Moreover, our model enhances transport computation precision through energy level renormalization correction (DFT+Σ correction), precisely adjusting the molecule-electrode energy level alignment. This advancement enables accurate determinations of charge transport properties at the atomic level, streamlining the computational process while maintaining high precision.
 
 ## **The QDHC Model Framework**
-The QDHC model adheres to a structured workflow when applying various levels of precision in simplification, which goes through an entire process from the initial geometric input final calculation of transport properties.
+The QDHC model adheres to a structured workflow demonstrated in the following diagram when applying various levels of precision in simplification, which goes through an entire process from the initial geometric input final calculation of transport properties.
 
 1. Problem Definition
 2. Structural Input
@@ -44,8 +38,8 @@ To illustrate the practical application and effectiveness of our hierarchical TB
 ![workflow](https://github.com/yuxi-TJU/Question-oriented-Hierarchical-Transport-Model/assets/68102657/ad6b807a-0ff2-4671-bfeb-35191da5049a)
 
 
-## Model Validation through benchmark studies
-To evaluate the performance of MolSim-Transport, it was applied to the following six molecular junction transport cases from the literature, forming a comprehensive benchmark test. These carefully selected cases span all levels of the QDHC strategy, ensuring the breadth and typicality of the test. The rapid replication of these cases demonstrates the high efficiency of the QDHC strategy in handling problems with different precision requirements and its unique ability to capture key factors in the transport process.
+## Benchmark studies
+To validate the performance of _**MolSim-Transport**_, it was applied to the following six molecular junction transport cases from the literature, forming a comprehensive benchmark test. These carefully selected cases span all levels of the QDHC strategy, ensuring the breadth and typicality of the test. The rapid replication of these cases demonstrates the high efficiency of the QDHC strategy in handling problems with different precision requirements and its unique ability to capture key factors in the transport process.
 
 ### System 1:  controlled Quantum Interference in π-Stacked Dimers
 - **Reference**: [Nature Chemistry, 2016, 8 (12), 1099–1104.](https://www.nature.com/articles/nchem.2615)

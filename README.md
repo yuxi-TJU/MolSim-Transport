@@ -31,7 +31,7 @@ A detailed working protocol for the study of the transport property of 1,3-BDT m
 ## Benchmark studies
 To validate the performance of _**MolSim-Transport**_, it was applied to the following six molecular junction transport cases from the literature, forming a comprehensive benchmark test. These carefully selected cases span all levels of the QDHC strategy, ensuring the breadth and typicality of the test. The rapid replication of these cases demonstrates the high efficiency of the QDHC strategy in handling problems with different precision requirements and its unique ability to capture key factors in the transport process.
 
-### System 1:  controlled Quantum Interference in π-Stacked Dimers
+### System 1:  Controlled Quantum Interference in π-Stacked Dimers
 - **Reference**: [Nature Chemistry, 2016, 8 (12), 1099–1104.](https://www.nature.com/articles/nchem.2615)
 - **Model Treatment**: Bare molecule + EHMO.
 ![case1](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/06c971bf-71f8-4d0e-aeba-772bd2884e5d)
@@ -46,7 +46,7 @@ To validate the performance of _**MolSim-Transport**_, it was applied to the fol
 - **Model Treatment**: Bare molecule + DFTB with higher accuracy.
 ![case3](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/8f20778c-b85c-4514-abdb-afed86db17c1)
 
-### System 4: binary conductance in the same junction for contact interface changes
+### System 4: Binary conductance in the same junction for contact interface changes
 - **Reference**: [Nature Nanotechnology, 2009, 4 (4), 230–234.](https://doi.org/10.1038/nnano.2009.10)
 - **Model Treatment**: Extended molecule + DFTB with the same accuracy as the previous case.
 ![case4](https://github.com/yuxi-TJU/Question-driven-Hierarchical-Transport-Model/assets/68102657/c2c1eb2f-46c1-4892-9290-415acbf4b7ec)

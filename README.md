@@ -18,10 +18,10 @@ The core of the QDHC (Question-Driven Hierarchical Computation) strategy lies in
 **Level 3 (L3):** This level further incorporates the entire electrode structure. MolSim-Transport provides a molecular junction model that includes the complete principal layer of the electrode, using pre-calculated specific electrode surface Green's functions and the coupling matrix of the extended molecule to build the self-energy matrix, thereby avoiding extensive and time-consuming calculations of the electrode. Coupled with strategies such as regional division and the folding of system Green's functions, this greatly enhances computational efficiency. It further considers the effects of electric field polarization, using linear polarization to address molecular junctions under finite bias, thus enabling low-cost studies of molecular junction transport characteristics under limited bias conditions.
 
 | Scheme  | System | Technique | Primary transport factor & research emphasis |
-| ------------- | ------------- | ------------- | ------------- |
-| :L1:  | :Molecule：  | Content Cell  | Content Cell  |
-| :L2:  | ：Extended molecule + electrode cluster：  | Content Cell  | Content Cell  |
-| :L3:  | ：Extended molecule + electrode principal layer：  | Content Cell  | Content Cell  |
+| ：-------------： | ：-------------： | :-------------: | :-------------: |
+| L1  | Molecule | Semi-empirical approach with multi-level precision for molecular electronic properties; constant self-energy term to mimic lead coupling  | Content Cell  |
+| L2  | Extended molecule + electrode cluster | Content Cell  | Content Cell  |
+| L3  | Extended molecule + electrode principal layer | Content Cell  | Content Cell  |
 
 
 ## Innovative Approach
